@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+// Import necessary packages
+import React from "react";
+import 'preline';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import Contact from "./Components/Contact/Contact";
+import Omeda from "./Components/Omeda/Omeda";
+import Navigation from "./Components/Navigation/Navigation";
+import Footer from "./Components/Home/Footer";
+import Classico from "./Components/Classico/Classico";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/omeda" element={<Omeda />} />
+        <Route path="/classico" element={<Classico />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
