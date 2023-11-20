@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Features from "../Home/Features";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Banner() {
   return (
@@ -20,10 +21,11 @@ export default function Banner() {
                 users, family users
               </p>
 
-              <Link
-                to="/"
-                title=""
-                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+              <ScrollLink
+                to="featuresSection"
+                spy={true}
+                smooth={true}
+                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-blue-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
                 role="button"
               >
                 Omeda HR Payroll Features
@@ -41,7 +43,7 @@ export default function Banner() {
                     d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-              </Link>
+              </ScrollLink>
             </div>
 
             <div>
@@ -53,6 +55,9 @@ export default function Banner() {
             </div>
           </div>
         </div>
+      </section>
+      <section id="featuresSection">
+        <Features />
       </section>
     </div>
   );
