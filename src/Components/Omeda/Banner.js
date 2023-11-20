@@ -3,30 +3,32 @@ import { Link } from "react-router-dom";
 
 export default function Banner() {
   return (
-    <div class="bg-white">
-      <section class="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+    <div className="bg-white">
+      <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             <div>
-              <p class="text-base font-semibold tracking-wider text-blue-600 uppercase">
-                A social media for learners
+              <p className="text-base font-semibold tracking-wider text-blue-600 uppercase">
+                Introducing Our Comprehensive HR Management Solution and Payslip
+                Facilities
               </p>
-              <h1 class="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
-                Connect & learn from the experts
+              <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
+                Welcome to Omada HR Payroll
               </h1>
-              <p class="mt-4 text-base text-black lg:mt-8 sm:text-xl">
-                Grow your career fast with right mentor.
+              <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
+                Your complete solution for businesses, students, dedicated
+                users, family users
               </p>
 
               <Link
                 to="/"
                 title=""
-                class="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
                 role="button"
               >
-                Join for free
+                Omeda HR Payroll Features
                 <svg
-                  class="w-6 h-6 ml-8 -mr-2"
+                  className="w-6 h-6 ml-8 -mr-2"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -40,22 +42,11 @@ export default function Banner() {
                   />
                 </svg>
               </Link>
-
-              <p class="mt-5 text-gray-600">
-                Already joined us?{" "}
-                <Link
-                  to="/"
-                  title=""
-                  class="text-black transition-all duration-200 hover:underline"
-                >
-                  Log in
-                </Link>
-              </p>
             </div>
 
             <div>
               <img
-                class="w-full"
+                className="w-full"
                 src={require("../../Assets/hr_payroll.png")}
                 alt=""
               />
