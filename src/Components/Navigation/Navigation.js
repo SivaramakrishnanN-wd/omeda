@@ -23,7 +23,7 @@ export default function Navigation() {
           <button
             data-collapse-toggle="navbar-cta"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-white  focus:ring-2 focus:ring-white-200 dark:text-white-400 dark:hover:bg-white-200 dark:focus:ring-blue-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white-500 rounded-lg md:hidden bg-white hover:bg-gray-800 focus:outline-white focus:ring-2 focus:ring-white-200 dark:text-black-400 dark:hover:bg-white-200 dark:focus:ring-blue-600"
             aria-controls="navbar-cta"
             aria-expanded="false"
           >
@@ -37,9 +37,9 @@ export default function Navigation() {
             >
               <to
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>
@@ -75,7 +75,6 @@ export default function Navigation() {
               </Link>
             </li>
 
-          
             <li>
               <Link
                 to="/contact"
